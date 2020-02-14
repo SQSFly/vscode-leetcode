@@ -1,10 +1,16 @@
 /*
- * @lc app=leetcode.cn id=1 lang=cpp
+ * 两数之和
+ * 法1：
+ * 双for循环，暴力求解
+ * 对于每个元素，我们都对其余下的元素进行遍历，将花费O(n)的时间
+ * 时间复杂度：O(n*n)
+ * 空间复杂度：O(1)
+ * 
  *
- * [1] 两数之和
+ * 
  */
 
-// @lc code=start
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -23,5 +29,5 @@ public:
         return {i,j};
     }
 };
-// @lc code=end
+
 
